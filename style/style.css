@@ -1,3 +1,11 @@
+.quicksand-regular {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* header styles */
 .header{
     display: flex;
     margin: 60px 90px;

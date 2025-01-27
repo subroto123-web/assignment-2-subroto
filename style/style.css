@@ -71,6 +71,38 @@
     cursor: pointer;
 }
 
+/* banner styles */
+.banner{
+    display: flex;
+    gap: 50px;
+    max-width: 1158px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.ban-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.ban-ti1{
+    color: orange;
+}
+.ban-ti2{
+    color: skyblue;
+}
+.ban-des{
+    font-size: 1.25rem;
+
+}
+.ban-btn{
+    color: white;
+    font-size: 1.25rem;
+    background-color: black;
+    padding: 10px 47px;
+    border-radius: 12px;
+}
+
 @media screen and (max-width:576px) {
     .header{
         border-bottom: 0.5px solid orange; 
@@ -93,5 +125,16 @@
     .div4{
         align-items: center;
         padding:12px 0 ;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin: 40px auto;
+    }
+    
+    .ban-img1{
+        width: 100%
     }
 }

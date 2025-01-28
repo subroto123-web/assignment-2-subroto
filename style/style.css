@@ -208,17 +208,24 @@
     max-width: 1158px;
     margin: 0 auto;
     gap: 18px;
-    background-image: url("../images/bg.png");
-    background: linear-gradient(rgba(255, 255, 255, 1),  rgba(254, 163, 1, 0.3));
-    background-size: cover;
 }
 
+ 
+
+.body1{
+    background-image: url('../images/bg.png');
+    background: linear-gradient(rgba(255, 255, 255, 1),  rgba(254, 163, 1, 0.3));
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
 .story-div-1{
     max-width: 530px;
     max-height: 640px;
     display: flex;
     flex-direction: column;
     border-radius: 16px;
+    background-color: white;
 }
 .div6-img{
   width: 100%;
@@ -259,6 +266,7 @@
 .out{
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 .out-img{
     border-radius: 16px 16px 0 0;
@@ -267,17 +275,17 @@
     background-color: #95B226;
     color: white;
     border: none;
-    padding: 15px 19px;
-    border-radius: 49px;
-    font-size: 15.34px;
+    padding: 0.93rem 1.18rem;
+    border-radius: 3.06rem;
+    font-size: 0.99rem;
     font-weight: 500;
-    width: 180px;
-    margin-left: 38px;
-    margin-top: -25px; 
+    width: 11.25rem;
+    margin-left: 2.37rem;
+    margin-top: -1.56rem; 
     cursor: pointer; 
 }
 .out-ti{
-    font-size: 15.34;
+    font-size: 0.99rem;
     font-weight: bold;
     margin: 20px 37px;
     line-height: 150%;
@@ -286,7 +294,7 @@
 #div5-btn{
     display: flex;
     justify-content: center;
-    margin: 60px auto;
+    padding: 60px;
     
 }
 .div5-btn6{
@@ -301,9 +309,62 @@
     cursor: pointer;
 }
 
+/* footer styles */
+.footer{
+    display: flex;
+    gap: 80px;
+    padding: 130px 180px;
+    background-color: #01ACFD;
+    max-width: 100%;
+    max-height: 519px;
+    color: white;
+}
+.foot-title{
+    font-size: 2.64rem;
+    font-weight: bold;
+}
+.foot-des{
+    font-size: 1.25rem;
+}
+
+.footer-title{
+    font-size: 1.56rem;
+    font-weight: bold;
+    width: 171px;
+}
+.foot-pera1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 156px;
+}
+.foot-pera{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.foot-img1{
+    width: 82px;
+    height: 82px;
+}
+.foot-ex{
+    display: flex;
+    align-items: center;
+}
+.foot-images{
+    display: flex;
+    width: 192px;
+    gap: 10px;
+
+}
+.foot-img{
+    width: 40px;
+    border-radius: 4px;
+    height: 40px;
+}
+
 /* Mobile device styles */
 
 @media screen and (max-width:576px) {
+    
     .header{
         border-bottom: 0.5px solid orange; 
         
@@ -321,6 +382,7 @@
         border-radius: 25px;
         background-color: black;
         margin: 6px 0;
+        cursor: pointer;
     }
     .div4{
         align-items: center;
@@ -335,7 +397,8 @@
     }
     
     .ban-img1{
-        width: 100%
+        width: 100%;
+        
     }
     .standard{
         flex-direction: column;
@@ -344,5 +407,49 @@
     }
     .less-gater{
         display: none;
+    }
+    .story-div-1{
+        display: none;
+        visibility: hidden;
+    }
+    
+    
+    .story{
+        margin: 0 auto;
+       
+        
+    }
+    .out{
+        max-width: 10rem;
+        background-color: white;
+    }
+    .body1{
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+    #div5-btn{
+        margin: 0 auto;
+        
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        padding: 40px 20px;
+        margin: 0px auto;
+        background-size: cover;
+
+    }
+    .btn-cmn{
+        font-size: 0.67rem;
+        padding: 0.375rem 0.68rem;
+        width: 8.125rem;
+        margin-top: -0.714rem;
+        margin-left: 1.42rem;
+    }
+    .story-div2{
+        gap: 11px;
+        margin: 0 auto;
+        max-width: 100%;
     }
 }
